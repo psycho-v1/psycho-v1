@@ -10,9 +10,12 @@ Most of that work started on BlockDAG community chain 1404. That is domain exper
 
 | Repo | Why it exists |
 |---|---|
-| [splitkit](https://github.com/psycho-v1/splitkit) | Portable TypeScript kit: pin block hashes across RPC families, detect a history split, scan nonces, export an evidence JSON. Tests in CI. Not tied to chain 1404. |
-| [chain1404-dao](https://github.com/psycho-v1/chain1404-dao) | Proposed dual-chamber governor. Voting weight is completed miner + staker *flow*, not raw balances. Foundry + tests. Not live. |
+| [splitkit](https://github.com/psycho-v1/splitkit) | Portable TypeScript kit: pin block hashes across RPC families, detect a history split, scan nonces, export an evidence JSON. Mock-RPC tests + CI. |
+| [work-weighted-governor](https://github.com/psycho-v1/work-weighted-governor) | Dual-chamber governor. Voting weight is completed miner + staker *flow*, not raw balances. Foundry tests. No ticker in the types. |
 | [fairline-l1](https://github.com/psycho-v1/fairline-l1) | Separate open EVM L1 experiment. Not 1404. Private 3-validator devnet first. No mainnet claim until heads match. |
+
+1404-specific notes for the governor live in [chain1404-dao](https://github.com/psycho-v1/chain1404-dao).
+Desk inspect scores block 316002 with splitkit. Kedge vendors the same deny-list IIFE.
 
 ## 1404 rescue tools (kept, labelled)
 
